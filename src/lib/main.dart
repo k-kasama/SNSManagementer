@@ -54,6 +54,17 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
+      drawer: Drawer(
+        child: ListView(
+          children: <Widget>[
+            DrawerHeader(
+              child: Text("ヘッダー"),
+              decoration: BoxDecoration(
+                color: Colors.blue
+              ),
+            ),
+          ],
+      )),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
